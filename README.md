@@ -8,9 +8,11 @@ Il sorteggio deve essere equo e non prevedibile.
 - Carica un file `.txt` contenente un nome per riga
 - Specifica quanti nomi estrarre
 - Interfaccia grafica semplice e autonoma
+- Rilevamento e eliminazione di nomi duplicati
 - Sorteggio casuale tramite `random.SystemRandom()`
 	Basa il funzionamento sulla fonte di entropia del sistema operativo e non su generatori pseudo-casuali.
 	Le occorrenze estrattei dipenderanno da eventi fisici e temporali (movimenti del mouse, interrupt hardware, jitter di CPU) non alterabili/prevedibili e riproducibili.
+- Generazione report di estrazione con graduatoria finale
 
 ## Dettagli tecnici
 - Fonte di entropia reale: 
