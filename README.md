@@ -46,3 +46,10 @@ Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nel
 3. **Avvia l’applicazione da cli**
    ```bash
    python3 SorteggioApp.py
+   ```
+
+4. **Verificare se un file e' stato manomesso**
+	Lanciare da riga comando il seguente comando e confrontare gli hash. Se questi due coincidono il file non è stato alterato.
+	```bash
+	sha256sum estrazione_20251031_184522.txt
+	```

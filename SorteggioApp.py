@@ -3,7 +3,10 @@ from tkinter import filedialog, messagebox
 import random
 from datetime import datetime
 import os
+import hashlib
 from collections import defaultdict
+
+SOFTWARE_VERSION = "SorteggioApp v1.0.0"
 
 ASCII_SIGNATURE = r"""
 
@@ -171,17 +174,26 @@ class SorteggioApp:
         if not path:
             return
 
+        # Contenuto principale
+        content = f"{SOFTWARE_VERSION}\n"
+        content += f"Data estrazione: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        content += f"Totale nomi nel file: {len(self.nomi)}\n"
+        content += f"Nomi estratti ({len(self.estratti)}):\n"
+        for i, nome in enumerate(self.estratti, start=1):
+            content += f"{i}. {nome}\n"
+
+        # Firma SHA256
+        digest = hashlib.sha256(content.encode("utf-8")).hexdigest()
+        content += f"\nSHA256: {digest}\n"
+
         with open(path, "w", encoding="utf-8") as f:
-            f.write(f"Data estrazione: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            f.write(f"Totale nomi nel file: {len(self.nomi)}\n")
-            f.write(f"Nomi estratti ({len(self.estratti)}):\n")
-            for i, nome in enumerate(self.estratti, start=1):
-                f.write(f"{i}. {nome}\n")
+            f.write(content)
 
         messagebox.showinfo("File salvato", f"Estratti salvati in:\n{os.path.abspath(path)}")
 
 if __name__ == "__main__":
     print(ASCII_SIGNATURE)
+    print(f"Versione software: {SOFTWARE_VERSION}")
     root = tk.Tk()
     app = SorteggioApp(root)
     root.mainloop()
