@@ -18,7 +18,7 @@ if ! python3 -m pip show pyinstaller &> /dev/null; then
 fi
 
 echo "==> Compilazione in corso..."
-python3 -m PyInstaller --onefile SorteggioApp.py
+python3 -m PyInstaller --onefile --noconsole SorteggioApp.py
 
 echo
 if [ -f "dist/SorteggioApp" ]; then
