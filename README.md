@@ -60,20 +60,20 @@ Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nel
 ![Interfaccia principale](img/Interfaccia_principale.png)
 
 Tramite l'interfaccia principale e' possibile: 
-1) selezionare file di input
-	1.1) caricare una lista da file
-	1.2) importa una lista nomi da una precedente estrazione, con possibilità di rimuovere le occorrenze già estratte
+1. selezionare file di input
+	1.1 caricare una lista da file
+	1.2 importa una lista nomi da una precedente estrazione, con possibilità di rimuovere le occorrenze già estratte
 	per un ripescaggio
 N.B. È importante che ogni occorrenza sia su una riga
 
-2) digitare il numero di occorrenze da estrarre
+2. digitare il numero di occorrenze da estrarre
 
-3) Cliccare sul pulsante "Esegui Sorteggio".
+3. Cliccare sul pulsante "Esegui Sorteggio".
 N.B. 2
 ad ogni sorteggio salva un report di estrazione su un file testuale nella stessa posizione del file sorgente. 
 Il file riporterà un nome standard "estrazione_AAAAMMGG_HHmmss.txt"
 
-4) se necessario effettuare un ripescaggio, tramite il pulsante "Importa lista da estrazione precedente" 
+4. se necessario effettuare un ripescaggio, tramite il pulsante "Importa lista da estrazione precedente" 
 	sarà possibile rieseguire una nuova estrazione dalla lista codificata salvata nel report estrazione precedente.
 	Sarà inoltre possibile scegliere se escludere o no dal ripescaggio le occorrenze già estratte.
 N.B. 3 
