@@ -55,31 +55,34 @@ Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nel
 	sha256sum estrazione_20251031_184522.txt
 	```
 
-## Utilizzo
+## Utilizzo dell’interfaccia principale
+
+Tramite l’interfaccia principale è possibile:
+
+1. **Selezionare il file di input**
+   - **1.1** Caricare una lista di nomi da file di testo.  
+     > Ogni nome deve trovarsi su una singola riga.
+   - **1.2** Importare una lista di nomi da una precedente estrazione, con possibilità di rimuovere le occorrenze già estratte per effettuare un ripescaggio.
+
+2. **Digitare il numero di occorrenze da estrarre**  
+   Inserire il valore nel campo dedicato.
+
+3. **Eseguire il sorteggio**  
+   Fare clic sul pulsante **"Esegui Sorteggio"** per avviare l’estrazione casuale.
+
+> **N.B. 1:**  
+> A ogni sorteggio viene salvato automaticamente un *report di estrazione* nella stessa cartella del file sorgente.  
+> Il file avrà nome standard:  
+> `estrazione_AAAAMMGG_HHmmss.txt`
+
+4. **Effettuare un ripescaggio (facoltativo)**  
+   Tramite il pulsante **"Importa lista da estrazione precedente"** è possibile rieseguire un’estrazione a partire dalla lista codificata nel report precedente.  
+   L’utente può scegliere se escludere o meno le occorrenze già estratte.
+
+> **N.B. 2:**  
+> Il report generato dopo un ripescaggio conterrà come nuova *lista originale* quella effettivamente utilizzata.  
+> Se durante l’importazione sono state rimosse le occorrenze già estratte, queste non compariranno più nel nuovo report.
+
+---
 
 ![Interfaccia principale](img/Interfaccia_principale.png)
-
-Tramite l'interfaccia principale e' possibile: 
-1. selezionare file di input
-  1.1 caricare una lista da file
-  1.2 importa una lista nomi da una precedente estrazione, con possibilità di rimuovere le occorrenze già estratte per un ripescaggio
-
-N.B. È importante che ogni occorrenza sia su una riga
-
-2. digitare il numero di occorrenze da estrarre
-
-3. Cliccare sul pulsante "Esegui Sorteggio".
-
-N.B. 2
-ad ogni sorteggio salva un report di estrazione su un file testuale nella stessa posizione del file sorgente. 
-Il file riporterà un nome standard "estrazione_AAAAMMGG_HHmmss.txt"
-
-4. se necessario effettuare un ripescaggio, tramite il pulsante "Importa lista da estrazione precedente" 
-sarà possibile rieseguire una nuova estrazione dalla lista codificata salvata nel report estrazione precedente.
-Sarà inoltre possibile scegliere se escludere o no dal ripescaggio le occorrenze già estratte.
-
-N.B. 3 
-Il report salvato dalla seconda estrazione riporterà come nuova "lista originale" la lista utilizzata.
-Se sono state rimosse le occorrenze della prima estrazione, queste non saranno più visibili nel report del ripescaggio.
-		 
-	
