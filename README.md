@@ -60,8 +60,8 @@ Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nel
 ![Interfaccia principale](img/Interfaccia_principale.png)
 
 Tramite l'interfaccia principale e' possibile: 
-1.a) caricare una lista da file
-1.b) importa una lista nomi da una precedente estrazione, con possibilità di rimuovere le occorrenze già estratte
+1) a) caricare una lista da file
+1) b) importa una lista nomi da una precedente estrazione, con possibilità di rimuovere le occorrenze già estratte
 	per un ripescaggio
 N.B. È importante che ogni occorrenza sia su una riga
 
