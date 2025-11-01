@@ -29,7 +29,7 @@ Il sorteggio deve essere equo e non prevedibile.
 - Librerie standard (`tkinter`, `random`)  
 - Per generare un `.exe`: `pyinstaller`
 
-## Utilizzo
+## Primo Avvio
 
 Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nell' ambiente di destinazione
 
@@ -50,6 +50,19 @@ Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nel
 
 4. **Verificare se un file e' stato manomesso**
 	Lanciare da riga comando il seguente comando e confrontare gli hash. Se questi due coincidono il file non è stato alterato.
+	Es.
 	```bash
 	sha256sum estrazione_20251031_184522.txt
 	```
+
+## Utilizzo
+
+![Interfaccia principale](img/Interfaccia_principale.png)
+
+	Tramite l'interfaccia principale e' possibile: 
+		1) caricare una lista da file, e' omportante che ogni occorrenza sia su una riga
+		2) salvare l'estrazione su un file testuale nella posizione desiderata. il file riporterà un nome standard "estrazione_AAAAMMGG_HHmmss.txt"
+		3) se necessario rieseguire un nuovo sorteggio, tramite il pulsante "ricostruisci lista da report" sarà possibile estrarre la lista di partenza con possibilità di escludere o no dalla lista le occorrenze già estratte.
+			N.B. il report salvato dalla seconda estrazione riporterà come nuova lista originale la lista utilizzata, se sono state rimosse le occorrenze selezionate, queste non saranno più visibili nel nuovo report.
+		 
+	
