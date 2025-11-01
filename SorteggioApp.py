@@ -11,15 +11,13 @@ SOFTWARE_VERSION = "SorteggioApp v1.6.0"
 DEFAULT_SAVE_DIR = os.path.join(os.path.expanduser("~"), "SorteggioReports")
 
 ASCII_SIGNATURE = r"""
- /$$$$$$$$                                                                            
-| $$_____/                                                                            
-| $$     /$$$$$$  /$$$$$$  /$$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$$  /$$$$$$$  /$$$$$$ 
-| $$$$$ /$$__  $$|____  $$| $$__  $$ /$$_____/ /$$__  $$ /$$_____/ /$$_____/ /$$__  $$
-| $$__/| $$  \__/ /$$$$$$$| $$  \ $$| $$      | $$$$$$$$|  $$$$$$ | $$      | $$  \ $$
-| $$   | $$      /$$__  $$| $$  | $$| $$      | $$_____/ \____  $$| $$      | $$  | $$
-| $$   | $$     |  $$$$$$$| $$  | $$|  $$$$$$$|  $$$$$$$ /$$$$$$$/|  $$$$$$$|  $$$$$$/
-|__/   |__/      \_______/|__/  |__/ \_______/ \_______/|_______/  \_______/ \______/ 
-                                                                                      
+  ____             _                   _         _    ____  ____  
+ / ___|  ___  _ __| |_ ___  __ _  __ _(_) ___   / \  |  _ \|  _ \ 
+ \___ \ / _ \| '__| __/ _ \/ _` |/ _` | |/ _ \ / _ \ | |_) | |_) |
+  ___) | (_) | |  | ||  __/ (_| | (_| | | (_) / ___ \|  __/|  __/ 
+ |____/ \___/|_|   \__\___|\__, |\__, |_|\___/_/   \_\_|   |_|    
+                           |___/ |___/                            
+                                                                                                                 
    Developed by Francesco Pompilio (Software Engineer)
    GitHub: github.com/francesco2096
 """
@@ -321,7 +319,7 @@ class SorteggioApp:
         # Reset stato interno
         self.nomi = []
         self.estratti = []
-        self.file_path = None
+        # self.file_path = None
     
         # UI: aggiorna contatore e disabilita azioni
         self.count_label.config(text="Nomi caricati: 0")
