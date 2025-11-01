@@ -5,14 +5,15 @@ Il sorteggio deve essere equo e non prevedibile.
 
 ## Funzionalità
 
-- Carica un file `.txt` contenente un nome per riga
-- Specifica quanti nomi estrarre
 - Interfaccia grafica semplice e autonoma
-- Rilevamento e eliminazione di nomi duplicati
+- Puoi caricare un file `.csv` contenente un' occorrenza per riga
+- Puoi specificare il numero di elementi da estrarre
+- Rilevamento e correzione di eventuali nomi duplicati
 - Sorteggio casuale tramite `random.SystemRandom()`
 	Basa il funzionamento sulla fonte di entropia del sistema operativo e non su generatori pseudo-casuali.
 	Le occorrenze estrattei dipenderanno da eventi fisici e temporali (movimenti del mouse, interrupt hardware, jitter di CPU) non alterabili/prevedibili e riproducibili.
 - Generazione report di estrazione con graduatoria finale
+- Hash-256 per un controllo sulla manomisisone del report
 
 ## Dettagli tecnici
 - Fonte di entropia reale: 
@@ -25,17 +26,17 @@ Il sorteggio deve essere equo e non prevedibile.
 
 ## Requisiti
 
-- Python 3.8 o superiore  
+- Python 3.8 o superiore [link alla pagina di download](https://www.python.org/downloads/)
 - Librerie standard (`tkinter`, `random`)  
 - Per generare un `.exe`: `pyinstaller`
 
 ## Primo Avvio
 
-Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nell' ambiente di destinazione
+Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nell' ambiente di destinazione Windows/MacOS/Linux.
 
 1. **Avvia l’applicazione da windows**
 
-	Lanciare script compile.bat, questo generera' un eseguibile nella cartella dist di progetto "SorteggioApp"
+	Lanciare script compile.bat, questo genererà un eseguibile nella cartella dist del progetto clonato "SorteggioApp"
 	Lanciare con doppio click l' eseguibile creato
 
 2. **Avvia l’applicazione da linux/macOS**
