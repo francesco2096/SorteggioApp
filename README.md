@@ -59,10 +59,24 @@ Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nel
 
 ![Interfaccia principale](img/Interfaccia_principale.png)
 
-	Tramite l'interfaccia principale e' possibile: 
-		1) caricare una lista da file, e' omportante che ogni occorrenza sia su una riga
-		2) salvare l'estrazione su un file testuale nella posizione desiderata. il file riporterà un nome standard "estrazione_AAAAMMGG_HHmmss.txt"
-		3) se necessario rieseguire un nuovo sorteggio, tramite il pulsante "ricostruisci lista da report" sarà possibile estrarre la lista di partenza con possibilità di escludere o no dalla lista le occorrenze già estratte.
-			N.B. il report salvato dalla seconda estrazione riporterà come nuova lista originale la lista utilizzata, se sono state rimosse le occorrenze selezionate, queste non saranno più visibili nel nuovo report.
+Tramite l'interfaccia principale e' possibile: 
+1.a) caricare una lista da file
+1.b) importa una lista nomi da una precedente estrazione, con possibilità di rimuovere le occorrenze già estratte
+	per un ripescaggio
+N.B. È importante che ogni occorrenza sia su una riga
+
+2) digitare il numero di occorrenze da estrarre
+
+3) Cliccare sul pulsante "Esegui Sorteggio".
+N.B. 2
+ad ogni sorteggio salva un report di estrazione su un file testuale nella stessa posizione del file sorgente. 
+Il file riporterà un nome standard "estrazione_AAAAMMGG_HHmmss.txt"
+
+4) se necessario effettuare un ripescaggio, tramite il pulsante "Importa lista da estrazione precedente" 
+	sarà possibile rieseguire una nuova estrazione dalla lista codificata salvata nel report estrazione precedente.
+	Sarà inoltre possibile scegliere se escludere o no dal ripescaggio le occorrenze già estratte.
+N.B. 3 
+Il report salvato dalla seconda estrazione riporterà come nuova "lista originale" la lista utilizzata.
+Se sono state rimosse le occorrenze della prima estrazione, queste non saranno più visibili nel report del ripescaggio.
 		 
 	
