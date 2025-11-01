@@ -69,6 +69,7 @@ N.B. È importante che ogni occorrenza sia su una riga
 2. digitare il numero di occorrenze da estrarre
 
 3. Cliccare sul pulsante "Esegui Sorteggio".
+
 N.B. 2
 ad ogni sorteggio salva un report di estrazione su un file testuale nella stessa posizione del file sorgente. 
 Il file riporterà un nome standard "estrazione_AAAAMMGG_HHmmss.txt"
