@@ -61,9 +61,9 @@ Per essere eseguito in modalita' user-friendly e' necessaria la compilazione nel
 
 Tramite l'interfaccia principale e' possibile: 
 1. selezionare file di input
-	1.1 caricare una lista da file
-	1.2 importa una lista nomi da una precedente estrazione, con possibilità di rimuovere le occorrenze già estratte
-	per un ripescaggio
+  1.1 caricare una lista da file
+  1.2 importa una lista nomi da una precedente estrazione, con possibilità di rimuovere le occorrenze già estratte per un ripescaggio
+
 N.B. È importante che ogni occorrenza sia su una riga
 
 2. digitare il numero di occorrenze da estrarre
@@ -74,8 +74,9 @@ ad ogni sorteggio salva un report di estrazione su un file testuale nella stessa
 Il file riporterà un nome standard "estrazione_AAAAMMGG_HHmmss.txt"
 
 4. se necessario effettuare un ripescaggio, tramite il pulsante "Importa lista da estrazione precedente" 
-	sarà possibile rieseguire una nuova estrazione dalla lista codificata salvata nel report estrazione precedente.
-	Sarà inoltre possibile scegliere se escludere o no dal ripescaggio le occorrenze già estratte.
+sarà possibile rieseguire una nuova estrazione dalla lista codificata salvata nel report estrazione precedente.
+Sarà inoltre possibile scegliere se escludere o no dal ripescaggio le occorrenze già estratte.
+
 N.B. 3 
 Il report salvato dalla seconda estrazione riporterà come nuova "lista originale" la lista utilizzata.
 Se sono state rimosse le occorrenze della prima estrazione, queste non saranno più visibili nel report del ripescaggio.
